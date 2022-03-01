@@ -1,0 +1,285 @@
+/*добавлены шрифты: */
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Caviar Dreams", "Caviar", sans-serif;
+    color: white;
+    background-color: lightpink;
+}
+
+p, li, a {
+    font-size: 14pt !important;
+    color: black;
+}
+
+
+/*доб */
+h1 {
+    font-size: 20pt !important;
+}
+
+/*доб */
+h2 {
+    font-size: 19pt !important;
+}
+
+/*доб */
+h3 {
+    font-size: 18pt !important;
+}
+
+/*доб */
+h4 {
+    font-size: 17pt !important;
+}
+
+/*доб */
+h5 {
+    font-size: 16pt !important;
+}
+
+/*доб */
+h6 {
+    font-size: 15pt !important;
+}
+
+/*доб */
+
+< !-- Четыре ссылки состояний:-- > a:link,
+< !-- Обычная,
+непосещаемая ссылка-- > a:visited,
+< !-- ссылка,
+которую посетил пользователь -- > a:hover,
+< !-- ссылка,
+когда пользователь мыши над ним -- > < !-- Ссылка момент щелчка: -- > a:active {
+    color: white;
+}
+
+header.header {
+    position: relative;
+    z-index: 5;
+    min-height: 20px;
+    padding: 20px;
+    color: black;
+    background-image:
+        linear-gradient(45deg, white 25%, transparent 25%),
+        linear-gradient(-45deg, white 25%, transparent 25%),
+        linear-gradient(135deg, white 25%, transparent 25%),
+        linear-gradient(-135deg, white 25%, transparent 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    box-shadow: 0 0 5px 0 pink;
+}
+
+div.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 90px;
+    height: 90px;
+    margin: 0;
+}
+
+/* добавила*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container.flex-end {
+    justify-content: flex-end;
+}
+
+.item {
+    line-height: 1;
+    text-align: center;
+    padding: 0.2rem;
+    border: 1px solid white;
+    margin: 1px;
+}
+
+nav.main-menu ul {
+    margin: 0;
+    margin-left: 130px;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.main-menu a {
+    color: black;
+    font-size: 14pt;
+    /* добавила */
+}
+
+
+
+/* Основное содержание */
+main {
+    min-height: ;
+    padding-top: 50px;
+    color: whitesmoke;
+    background-color: lightpink;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
+}
+
+main::after,
+.slides::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article.blog-entry {
+    min-height: 100px;
+    margin: 0 20px;
+    padding: 10px;
+    background-color: rgba(241, 196, 15, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    /*доб */
+    box-shadow: 0 0 3px white;
+}
+
+< !-- Псевдоэлемент -- > .blog-entry::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section .idea {
+    float: left;
+    width: 90%;
+    min-height: 100px;
+    padding: 3%;
+    background-color: rgba(250, 100, 18, 0.1);
+    border-radius: 5px;
+}
+
+.idea > p {
+    margin: 1em 0;
+    font-size: 0.8em;
+}
+
+.idea > p:last-child {
+    margin: 0;
+}
+
+.idea > h1 {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+aside.video-preview {
+    float: right;
+    width: 46%;
+    margin: 0 0 1em 0.5em;
+    padding: 0.3em 0.3em 0.65em;
+    background-color: white;
+    /*доб */
+    box-shadow: 0 0 5px 3px rgba(243, 156, 18, 0.2);
+}
+
+/*доб: */
+.video-preview > img {
+    width: 100%;
+}
+
+section.photos {
+    min-height: 50px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 5px 3px black;
+    box-shadow: 0 0 5px white;
+}
+
+figure.slides {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.slides > img {
+    float: left;
+    margin-right: 16px;
+}
+
+.slides > img:last-child {
+    margin-right: 0;
+}
+
+/* Подвал */
+footer.page-footer {
+    min-height: 50px;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    background-color: lightpink;
+    background-image:
+        linear-gradient(45deg, transparent 50%, white 50%),
+        linear-gradient(-45deg, transparent 50%, white 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(-135deg, transparent 50%, white 50%);
+    background-repeat: repeat-x;
+    background-position: 0 0, 0 0, 0 100%, 0 100%;
+    background-size: 12px 12px;
+}
+
+.page-footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-footer .info {
+    float: left;
+}
+
+.page-footer .info img {
+    margin-right: 0.5em;
+    vertical-align: middle;
+    border: 2px solid white;
+    box-shadow: 0 0 4px black;
+    transform: rotate(-5deg);
+}
+
+.page-footer .copyright {
+    float: right;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+div.librarie {
+    min-height: 50px;
+    margin: 20px 0;
+}
